@@ -1,0 +1,12 @@
+Encapsulation protects the data inside the Book class by keeping its fields private.
+The class controls how the data is accessed or changed through getters and setters,
+so invalid values such as a negative price can be rejected.
+
+A class is a blueprint that defines the properties and behaviour of a Book.
+An object is a specific instance created from that class, such as one particular
+book on a library shelf.
+
+totalBooks is static because it represents the total number of Book objects,
+which belongs to the class rather than to one particular book.
+If it were an instance field, every Book object would have its own separate
+counter instead of sharing one total count.
