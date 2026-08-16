@@ -10,3 +10,11 @@ totalBooks is static because it represents the total number of Book objects,
 which belongs to the class rather than to one particular book.
 If it were an instance field, every Book object would have its own separate
 counter instead of sharing one total count.
+
+
+
+The == operator compares whether two String references refer to the same object.
+The .equals() method compares the actual characters contained in the Strings, so
+.equals() is the correct choice when comparing ISBN values because two different
+String objects can contain the same ISBN.
+
